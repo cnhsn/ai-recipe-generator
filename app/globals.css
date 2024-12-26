@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0F172A;
+  --foreground: #E2E8F0;
+  --primary: #3B82F6;
+  --secondary: #1E293B;
+  --accent: #60A5FA;
+  --border: #334155;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.chat-bubble {
+  @apply p-4 rounded-lg max-w-[80%] shadow-lg;
+}
+
+.user-bubble {
+  @apply bg-primary text-white ml-auto;
+}
+
+.ai-bubble {
+  @apply bg-secondary text-foreground;
+}
+
+.prose {
+  @apply text-foreground max-w-none !important;
+}
+
+.prose h1, .prose h2, .prose h3, .prose strong {
+  @apply text-foreground !important;
+}
+
+.prose ul, .prose ol {
+  @apply text-foreground !important;
+  @apply pl-4 !important;
+} 

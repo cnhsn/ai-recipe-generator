@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Destekli Tarif Oluşturucu
 
-## Getting Started
+Bu uygulama, yapay zeka destekli bir tarif oluşturma aracıdır. Kullanıcıların ellerindeki malzemelere ve tercihlerine göre özelleştirilmiş tarifler oluşturur.
 
-First, run the development server:
+## Özellikler
 
+- 🧠 Yapay zeka destekli tarif oluşturma
+- 🌙 Dark mode arayüz
+- 📱 Responsive tasarım
+- ✨ Modern ve kullanıcı dostu UI
+- 🔄 Gerçek zamanlı geri bildirim
+- 📝 Markdown formatında detaylı tarifler
+
+## Teknolojiler
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- OpenRouter AI API
+- React Markdown
+
+## Kurulum
+
+1. Repoyu klonlayın:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repo-url]
+cd recipe-generator
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Bağımlılıkları yükleyin:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. `.env.example` dosyasını `.env` olarak kopyalayın ve gerekli değişkenleri ayarlayın:
+```bash
+cp .env.example .env
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Geliştirme sunucusunu başlatın:
+```bash
+npm run dev
+```
 
-## Learn More
+## Yapılandırma
 
-To learn more about Next.js, take a look at the following resources:
+`.env` dosyasında aşağıdaki değişkenleri ayarlayın:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `OPENROUTER_API_KEY`: OpenRouter API anahtarınız
+- `AI_MODEL`: Kullanmak istediğiniz AI modeli
+- `SYSTEM_PROMPT`: Tarif oluşturma promptu
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Production Build
 
-## Deploy on Vercel
+Production build oluşturmak için:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Bu uygulama Vercel, Netlify veya benzeri platformlarda deploy edilebilir. Deployment sırasında environment variables'ları ayarlamayı unutmayın.
+
+## Lisans
+
+MIT
+
+## Katkıda Bulunma
+
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request açın
